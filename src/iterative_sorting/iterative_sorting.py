@@ -23,7 +23,7 @@ def selection_sort(arr):
         smallest_index = cur_index          # Looking for the smallest index
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc)
-        # for each item (j) in the array with a range of index + 1 through length of the array
+        # for each item (j) in the array with i range of index + 1 through length of the array
         for j in range(i + 1, len(arr)):
             # if the smallest index of the array is > array j:
             if arr[smallest_index] > arr[j]:
@@ -57,9 +57,23 @@ random.shuffle(array_2)
 print(array_2)
 print(bubble_sort(array_2))
 
+# NOTE: This works too, not sure why we don't just do this
+array_3 = list(range(1, 11))
+random.shuffle(array_3)
+print(array_3)
+array_3.sort()
+print(array_3)
+
 # STRETCH: implement the Count Sort function below
+
+# NOTE: Not tested yet just thinking
+# Counting sort is an algorithm that sorts elements based on a numeric key
 
 
 def count_sort(arr, maximum=-1):
+    pass
+    return (arr)
 
-    return arr
+
+#array_4 = [1, 4, 7, 2, 1, 3, 2, 1, 4, 2, 3, 2, 1]
+#print(count_sort(array_4, 8))
