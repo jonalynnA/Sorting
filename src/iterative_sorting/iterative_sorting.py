@@ -19,6 +19,7 @@ random.shuffle(array)
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):        # selection_sort takes in an array, i is the index starting at the 0 index and running through the length of the array -1 which would be the last indexed item
+        print(arr)
         cur_index = i                       # the current index we are on is represented with i
         smallest_index = cur_index          # Looking for the smallest index
         # TO-DO: find next smallest element
@@ -43,7 +44,8 @@ print(selection_sort(array))
 
 
 def bubble_sort(arr):
-    for i in range(0, len(arr) - 1):  # Outer loop: i = 0 to num of items in list minus 1
+    for i in range(0, len(arr) - 1):
+        print(arr)  # Outer loop: i = 0 to num of items in list minus 1
         # Inner loop: i = 0 to num of items in list minus 1 minus i because we know from the outer loop the last item in the list is already sorted
         for j in range(0, len(arr) - 1 - i):
             # if item on the left is bigger than item on the right:
